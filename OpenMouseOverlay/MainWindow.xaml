@@ -17,14 +17,14 @@
         <Image x:Name="BaseColor" Source="pack://application:,,,/media/base-color.png" Width="85"/>
         <Image x:Name="BaseImage" Source="pack://application:,,,/media/raton-base.png" Width="85"/>
         <!-- Tintado para LeftButtonHighlight -->
-        <Rectangle Width="85" Height="{Binding ActualHeight, ElementName=LeftButtonHighlight}"
+        <Rectangle x:Name="LeftButtonTint" Width="85" Height="{Binding ActualHeight, ElementName=LeftButtonHighlight}"
                    Fill="#80FF0000" Visibility="{Binding Visibility, ElementName=LeftButtonHighlight}">
             <Rectangle.OpacityMask>
                 <ImageBrush ImageSource="pack://application:,,,/media/left-click.png"/>
             </Rectangle.OpacityMask>
         </Rectangle>
         <!-- Tintado para RightButtonHighlight -->
-        <Rectangle Width="85" Height="{Binding ActualHeight, ElementName=RightButtonHighlight}"
+        <Rectangle x:Name="RightButtonTint" Width="85" Height="{Binding ActualHeight, ElementName=RightButtonHighlight}"
                    Fill="#80007AFF" Visibility="{Binding Visibility, ElementName=RightButtonHighlight}">
             <Rectangle.OpacityMask>
                 <ImageBrush ImageSource="pack://application:,,,/media/right-click.png"/>
