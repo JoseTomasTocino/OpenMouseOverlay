@@ -9,6 +9,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="media\base-color.png" />
+    <None Remove="media\left-click.png" />
+    <None Remove="media\raton-base.png" />
+    <None Remove="media\right-click.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="media\base-color.png" />
+    <Resource Include="media\left-click.png" />
+    <Resource Include="media\raton-base.png" />
+    <Resource Include="media\right-click.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MouseKeyHook" Version="5.7.1" />
   </ItemGroup>
 
